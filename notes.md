@@ -39,7 +39,7 @@ Takes into account the types of the operands.
 
 ### Exceptions:
 
-**Comparing a *number* and a *string* **
+** Comparing a *number* and a *string* 
 ```
 5 == "5"
 5 == 5
