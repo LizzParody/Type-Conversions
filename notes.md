@@ -39,7 +39,7 @@ Takes into account the types of the operands.
 
 ### Exceptions:
 
-# Comparing a *number* and a *string*
+**Comparing a *number* and a *string* **
 ```
 5 == "5"
 5 == 5
@@ -47,7 +47,7 @@ true
 ```
 It converts the string into a number, and them compare them
 
-# Comparing *Boolean* and *any other type*
+** Comparing *Boolean* and *any other type* **
 ```
 true == 2;
 1 == 2;
@@ -55,7 +55,7 @@ false
 ```
 It converts the boolean into a number. True is converted to 1 and false to 0.
 
-# Comparing *null* and *undefined*
+** Comparing *null* and *undefined* **
 ```
 null == undefined
 true
@@ -70,14 +70,14 @@ false
 ```
 
 ## Addition and type conversion.
-# *number* and *string*
+** *number* and *string* **
 ```
 5 + "5";
 55
 ```
 It converts the number into string and then concatenate the values.
 
-# Other arithmetic oparators (\*\), / , -)
+** Other arithmetic oparators (\*\), / , -) **
 ```
 4 * "4" // 12
 10 / "2" // 5
