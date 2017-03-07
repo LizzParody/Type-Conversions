@@ -8,7 +8,7 @@ typeof null -> **object** <br>
 typeof NaN -> **number** <br>
 typeof Infinity -> **number**
 
-###Difference betwwen **null** and  **undefined** 
+###Difference betwwen **null** and  **undefined**
 
 **null** means no object
 **undefined** means no value
@@ -16,18 +16,18 @@ typeof Infinity -> **number**
 ### NaN
 **NaN** Numeric values that are impossible to represent in JavaScript.
 NaN is the only value in JavaScript that is not equal to itself!
-```
+```javascript
 NaN == NaN;
 false
 ```
 
 *Test for NaN*
-```
+```javascript
 isNaN(9);
 false
 ```
 Also
-```
+```javascript
 isNaN(0/0);
 true
 ```
@@ -39,24 +39,24 @@ Takes into account the types of the operands.
 
 ### Exceptions:
 
-#### Comparing a *number* and a *string* 
-```
+#### Comparing a *number* and a *string*
+```javascript
 5 == "5"
 5 == 5
 true
 ```
 It converts the string into a number, and them compare them
 
-#### Comparing *Boolean* and *any other type* 
-```
+#### Comparing *Boolean* and *any other type*
+```javascript
 true == 2;
 1 == 2;
 false
 ```
 It converts the boolean into a number. True is converted to 1 and false to 0.
 
-#### Comparing *null* and *undefined* 
-```
+#### Comparing *null* and *undefined*
+```javascript
 null == undefined
 true
 ```
@@ -64,21 +64,21 @@ It always evaluate to true. Both of those values means "no value" (a variable wi
 
 ## Strict Equality (===)
 Two values are strictly equal if the value and type is the same.
-```
+```javascript
 5 === "5";
 false
 ```
 
 ## Addition and type conversion.
-*number* and *string* 
-```
+*number* and *string*
+```javascript
 5 + "5";
 55
 ```
 It converts the number into string and then concatenate the values.
 
-Other arithmetic oparators (\*\), / , -) 
-```
+Other arithmetic oparators (\*\), / , -)
+```javascript
 4 * "4" // 12
 10 / "2" // 5
 "7" - 2 //5
@@ -86,7 +86,7 @@ Other arithmetic oparators (\*\), / , -)
 It converts the string into number.
 
 ## Convert string into number.
-```
+```javascript
 var num = 3 + Number("4"); // If it can't converted it will return NaN
 ```
 
@@ -101,6 +101,6 @@ Concentrate on what is falsey, everything else is truthy.
 **Falsey**
 * Undefined
 * Null
-* 0 
+* 0
 * NaN
 * ""
